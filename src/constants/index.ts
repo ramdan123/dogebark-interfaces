@@ -1,4 +1,4 @@
-import { ChainId, JSBI, Percent } from '@dogmoneyswap/sdk'
+import { ChainId, JSBI, Percent } from '@dogebark/sdk'
 
 export const POOL_DENY = ['14', '29', '45', '30']
 

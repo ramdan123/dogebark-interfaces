@@ -1,4 +1,4 @@
-import { JSBI, Percent } from '@dogmoneyswap/sdk'
+import { JSBI, Percent } from '@dogebark/sdk'
 
 import { basisPointsToPercent } from './basisPointsToPercent'
 

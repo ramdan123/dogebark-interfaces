@@ -1,4 +1,4 @@
-import { Currency, CurrencyAmount, Token } from '@dogmoneyswap/sdk'
+import { Currency, CurrencyAmount, Token } from '@dogebark/sdk'
 import React, { CSSProperties, MutableRefObject, useCallback, useMemo } from 'react'
 import { RowBetween, RowFixed } from '../../components/Row'
 
@@ -18,12 +18,12 @@ import styled from 'styled-components'
 import { t } from '@lingui/macro'
 import { useActiveWeb3React } from '../../hooks/useActiveWeb3React'
 import { useCombinedActiveList } from '../../state/lists/hooks'
-import { useCurrencyBalance, /*useMultichainCurrencyBalance*/ } from '../../state/wallet/hooks'
+import { useCurrencyBalance /*useMultichainCurrencyBalance*/ } from '../../state/wallet/hooks'
 import { useIsUserAddedToken } from '../../hooks/Tokens'
 import { useLingui } from '@lingui/react'
 import { formatNumberScale } from '../../functions'
 import { useWeb3React } from '@web3-react/core'
-import { ChainId } from '@dogmoneyswap/sdk'
+import { ChainId } from '@dogebark/sdk'
 import Logo from '../../components/Logo'
 
 function currencyKey(currency: Currency): string {
@@ -196,7 +196,13 @@ export default function CurrencyList({
 
       const currency = row
 
-      const isSelected = Boolean(currency && selectedCurrency && (selectedCurrency.chainId == currency.chainId && selectedCurrency.symbol == currency.symbol && selectedCurrency.name == currency.name))
+      const isSelected = Boolean(
+        currency &&
+          selectedCurrency &&
+          selectedCurrency.chainId == currency.chainId &&
+          selectedCurrency.symbol == currency.symbol &&
+          selectedCurrency.name == currency.name
+      )
       const handleSelect = () => currency && onCurrencySelect(currency)
 
       if (currency) {

@@ -11,7 +11,7 @@ import {
   TradeType,
   Trade as V2Trade,
   WNATIVE_ADDRESS,
-} from '@dogmoneyswap/sdk'
+} from '@dogebark/sdk'
 import { DEFAULT_ARCHER_ETH_TIP, DEFAULT_ARCHER_GAS_ESTIMATE } from '../../config/archer'
 import {
   EstimatedSwapCall,
@@ -341,7 +341,7 @@ function validatedRecipient(recipient: any): string | null {
 }
 
 export function defaultSwapState(): SwapState {
-  return queryParametersToSwapState(initialState);
+  return queryParametersToSwapState(initialState)
 }
 
 export function queryParametersToSwapState(parsedQs: ParsedQs, chainId: ChainId = ChainId.DOGECHAIN): SwapState {
@@ -401,7 +401,7 @@ export function useDefaultsFromURLSearch():
     return {
       inputCurrencyId: defaultState[Field.INPUT].currencyId,
       outputCurrencyId: defaultState[Field.OUTPUT].currencyId,
-    };
+    }
   }
 
   useEffect(() => {

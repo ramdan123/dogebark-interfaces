@@ -1,4 +1,4 @@
-import { Currency, Percent, Trade, TradeType } from '@dogmoneyswap/sdk'
+import { Currency, Percent, Trade, TradeType } from '@dogebark/sdk'
 
 import { useMemo } from 'react'
 import { useUserSlippageToleranceWithDefault } from '../state/user/hooks'

@@ -1,4 +1,4 @@
-import { Currency, CurrencyAmount, FACTORY_ADDRESS, Pair, computePairAddress } from '@dogmoneyswap/sdk'
+import { Currency, CurrencyAmount, FACTORY_ADDRESS, Pair, computePairAddress } from '@dogebark/sdk'
 
 import IUniswapV2PairABI from '@dogmoneyswap/core/abi/IUniswapV2Pair.json'
 import { Interface } from '@ethersproject/abi'

@@ -1,7 +1,7 @@
 import { Field, replaceSwapState, selectCurrency, setRecipient, switchCurrencies, typeInput } from './actions'
 
 import { createReducer } from '@reduxjs/toolkit'
-import { ChainId, MIST_ADDRESS } from '@dogmoneyswap/sdk'
+import { ChainId, MIST_ADDRESS } from '@dogebark/sdk'
 
 export interface SwapState {
   readonly independentField: Field

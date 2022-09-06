@@ -1,4 +1,4 @@
-import { ChainId, CurrencyAmount } from '@dogmoneyswap/sdk'
+import { ChainId, CurrencyAmount } from '@dogebark/sdk'
 import NavLink from '../../components/NavLink'
 import React from 'react'
 import { t } from '@lingui/macro'

@@ -1,4 +1,4 @@
-import { Currency, Token } from '@dogmoneyswap/sdk'
+import { Currency, Token } from '@dogebark/sdk'
 import React, { useCallback, useEffect, useState } from 'react'
 
 import CurrencyModalView from './CurrencyModalView'

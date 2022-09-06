@@ -1,13 +1,9 @@
-import {
-  clearAllTransactions,
-  updateTransaction,
-  deleteTransaction,
-} from './actions'
+import { clearAllTransactions, updateTransaction, deleteTransaction } from './actions'
 
 import { createReducer } from '@reduxjs/toolkit'
 import { ShiftStatus } from '../../services/sideshift.ai'
 import { HopStatus } from '../../services/hop.cash'
-import { Currency } from '@dogmoneyswap/sdk'
+import { Currency } from '@dogebark/sdk'
 
 const now = () => new Date().getTime()
 
@@ -41,15 +37,12 @@ export const initialState: TransactionState = {}
 
 export default createReducer(initialState, (builder) =>
   builder
-    .addCase(
-      updateTransaction,
-      (transactions, { payload }) => {
-        const {hash} = payload
-        const txs = transactions ?? {}
-        txs[hash] = payload
-      }
-    )
-    .addCase(clearAllTransactions, (transactions, { payload: { } }) => {
+    .addCase(updateTransaction, (transactions, { payload }) => {
+      const { hash } = payload
+      const txs = transactions ?? {}
+      txs[hash] = payload
+    })
+    .addCase(clearAllTransactions, (transactions, { payload: {} }) => {
       transactions = {}
     })
     .addCase(deleteTransaction, (transactions, { payload: { hash } }) => {

@@ -1,5 +1,5 @@
 import { BscConnector } from '@binance-chain/bsc-connector'
-import { ChainId } from '@dogmoneyswap/sdk'
+import { ChainId } from '@dogebark/sdk'
 import { FortmaticConnector } from '../entities/FortmaticConnector'
 import { InjectedConnector } from '@web3-react/injected-connector'
 import { NetworkConnector } from '../entities/NetworkConnector'
@@ -8,7 +8,7 @@ import { TorusConnector } from '@web3-react/torus-connector'
 import { WalletConnectConnector } from '@web3-react/walletconnect-connector'
 import { WalletLinkConnector } from '@web3-react/walletlink-connector'
 import { Web3Provider } from '@ethersproject/providers'
-import RPC from '../config/rpc';
+import RPC from '../config/rpc'
 
 export function getNetwork(defaultChainId, urls = RPC) {
   return new NetworkConnector({
@@ -39,10 +39,8 @@ export const walletconnect = new WalletConnectConnector({
   rpc: RPC,
   bridge: 'https://bridge.walletconnect.org',
   qrcode: true,
-  supportedChainIds: [
-    ChainId.DOGECHAIN,
-  ],
-  chainId: network.provider.chainId
+  supportedChainIds: [ChainId.DOGECHAIN],
+  chainId: network.provider.chainId,
 })
 
 // mainnet only

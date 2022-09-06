@@ -1,4 +1,4 @@
-import { ChainId, Token } from '@dogmoneyswap/sdk'
+import { ChainId, Token } from '@dogebark/sdk'
 import { useLayoutEffect, useState } from 'react'
 
 import Vibrant from 'node-vibrant'

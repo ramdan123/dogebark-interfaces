@@ -1,4 +1,4 @@
-import { CurrencyAmount, Currency, Percent } from '@dogmoneyswap/sdk'
+import { CurrencyAmount, Currency, Percent } from '@dogebark/sdk'
 import React, { useMemo } from 'react'
 
 import { warningSeverity } from '../../functions/prices'

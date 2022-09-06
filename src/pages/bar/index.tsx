@@ -1,10 +1,10 @@
 import { ApprovalState, useApproveCallback } from '../../hooks/useApproveCallback'
-import { BAR_ADDRESS, ZERO } from '@dogmoneyswap/sdk'
+import { BAR_ADDRESS, ZERO } from '@dogebark/sdk'
 import React, { useEffect, useState } from 'react'
 import { MIST, XMIST } from '../../config/tokens'
 
 import Button from '../../components/Button'
-import { ChainId } from '@dogmoneyswap/sdk'
+import { ChainId } from '@dogebark/sdk'
 import Container from '../../components/Container'
 import Dots from '../../components/Dots'
 import Head from 'next/head'
@@ -231,7 +231,7 @@ export default function Stake() {
                         </div> */}
           </div>
           <div className="hidden px-8 ml-6 md:block w-72">
-            <Image src="/xdogmoney-sign.png" alt="xDOGMONEY sign" width="100%" height="100%" layout="responsive" />
+            <Image src="/xdogmoney-sign.png" alt="xDOGEBARK sign" width="100%" height="100%" layout="responsive" />
           </div>
         </div>
         <div className="flex flex-col justify-center md:flex-row">
@@ -443,7 +443,7 @@ export default function Stake() {
                   <div className="flex items-center ml-8 space-x-4 md:ml-0">
                     <Image
                       className="max-w-10 md:max-w-16 -ml-1 mr-1 md:mr-2 -mb-1.5 rounded"
-                      src="/images/tokens/dogmoney-square.jpg"
+                      src="/images/tokens/dogebark-square.jpg"
                       alt="DOGEBARK"
                       width={64}
                       height={64}

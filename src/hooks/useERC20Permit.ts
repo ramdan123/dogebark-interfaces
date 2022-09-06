@@ -1,4 +1,4 @@
-import { ChainId, Currency, CurrencyAmount, JSBI, Percent, Token, TradeType, Trade as V2Trade } from '@dogmoneyswap/sdk'
+import { ChainId, Currency, CurrencyAmount, JSBI, Percent, Token, TradeType, Trade as V2Trade } from '@dogebark/sdk'
 import { MIST } from '../config/tokens'
 import { useMemo, useState } from 'react'
 
@@ -31,7 +31,7 @@ const PERMITTABLE_TOKENS: {
   }
 } = {
   [ChainId.DOGECHAIN]: {
-    [MIST[ChainId.DOGECHAIN].address]: { type: PermitType.AMOUNT, name: 'Dog Money' },
+    [MIST[ChainId.DOGECHAIN].address]: { type: PermitType.AMOUNT, name: 'Doge Bark' },
   },
 }
 

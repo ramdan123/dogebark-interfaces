@@ -1,4 +1,4 @@
-import { Currency, Price } from '@dogmoneyswap/sdk'
+import { Currency, Price } from '@dogebark/sdk'
 import { FC, useState } from 'react'
 import { useDerivedLimitOrderInfo, useLimitOrderState } from '../../../state/limit-order/hooks'
 

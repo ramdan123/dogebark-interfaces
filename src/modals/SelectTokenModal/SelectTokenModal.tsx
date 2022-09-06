@@ -1,4 +1,4 @@
-import { Currency } from '@dogmoneyswap/sdk'
+import { Currency } from '@dogebark/sdk'
 import React, { useCallback } from 'react'
 
 import CurrencyModalView from './CurrencyModalView'
@@ -13,13 +13,7 @@ interface SelectTokenModalProps {
   tokenList?: Currency[]
 }
 
-function SelectTokenModal({
-  isOpen,
-  onDismiss,
-  onCurrencySelect,
-  selectedCurrency,
-  tokenList
-}: SelectTokenModalProps) {
+function SelectTokenModal({ isOpen, onDismiss, onCurrencySelect, selectedCurrency, tokenList }: SelectTokenModalProps) {
   const handleCurrencySelect = useCallback(
     (currency: Currency) => {
       onCurrencySelect(currency)

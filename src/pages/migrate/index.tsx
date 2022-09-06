@@ -1,6 +1,6 @@
 import { AddressZero } from '@ethersproject/constants'
 import { formatUnits, parseUnits } from '@ethersproject/units'
-import { ChainId, Token, CurrencyAmount, JSBI } from '@dogmoneyswap/sdk'
+import { ChainId, Token, CurrencyAmount, JSBI } from '@dogebark/sdk'
 import { useSushiRollContract } from '../../hooks/useContract'
 import { useLingui } from '@lingui/react'
 import { t } from '@lingui/macro'

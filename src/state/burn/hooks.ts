@@ -1,4 +1,4 @@
-import { Currency, CurrencyAmount, JSBI, Pair, Percent, Token } from '@dogmoneyswap/sdk'
+import { Currency, CurrencyAmount, JSBI, Pair, Percent, Token } from '@dogebark/sdk'
 import { Field, typeInput } from './actions'
 import { useAppDispatch, useAppSelector } from '../hooks'
 

@@ -12,7 +12,7 @@ import {
 } from '../../services/graph'
 
 import { BigNumber } from '@ethersproject/bignumber'
-import { ChainId, WNATIVE, Token, WBCH, MASTERCHEF_ADDRESS, CurrencyAmount } from '@dogmoneyswap/sdk'
+import { ChainId, WNATIVE, Token, WBCH, MASTERCHEF_ADDRESS, CurrencyAmount } from '@dogebark/sdk'
 import { MIST, DAI, USDT, USDC, WBTC } from '../../config/tokens'
 import Container from '../../components/Container'
 import FarmList from '../../features/onsen/FarmList'
@@ -356,7 +356,7 @@ export default function Farm(): JSX.Element {
 
       const defaultReward = {
         token: 'DOGEBARK',
-        icon: 'https://assets.dogmoney.money/blockchains/dogechain/assets/0x93C8a00416dD8AB9701fa15CA120160172039851/logo.png',
+        icon: 'https://assets.dogebark.dog/logo.png',
         rewardPerBlock,
         rewardPerDay: rewardPerBlock * blocksPerDay,
         rewardPrice: +mistPriceUSD,

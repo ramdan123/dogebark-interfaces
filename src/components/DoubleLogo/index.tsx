@@ -1,4 +1,4 @@
-import { Currency } from '@dogmoneyswap/sdk'
+import { Currency } from '@dogebark/sdk'
 import CurrencyLogo from '../CurrencyLogo'
 import React from 'react'
 import { classNames } from '../../functions'

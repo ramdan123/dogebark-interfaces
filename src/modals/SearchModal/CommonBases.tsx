@@ -1,4 +1,4 @@
-import { ChainId, Currency, Token, currencyEquals } from '@dogmoneyswap/sdk'
+import { ChainId, Currency, Token, currencyEquals } from '@dogebark/sdk'
 
 import { AutoColumn } from '../../components/Column'
 import { AutoRow } from '../../components/Row'

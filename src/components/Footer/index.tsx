@@ -1,5 +1,5 @@
 import { ANALYTICS_URL } from '../../constants'
-import { ChainId } from '@dogmoneyswap/sdk'
+import { ChainId } from '@dogebark/sdk'
 import ExternalLink from '../ExternalLink'
 import Polling from '../Polling'
 import { t } from '@lingui/macro'

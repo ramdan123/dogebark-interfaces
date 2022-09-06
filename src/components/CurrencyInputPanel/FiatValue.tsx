@@ -1,4 +1,4 @@
-import { Currency, CurrencyAmount, Percent } from '@dogmoneyswap/sdk'
+import { Currency, CurrencyAmount, Percent } from '@dogebark/sdk'
 import React, { useMemo } from 'react'
 
 import { t } from '@lingui/macro'

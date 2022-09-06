@@ -1,4 +1,4 @@
-import { CurrencyAmount, Token } from '@dogmoneyswap/sdk'
+import { CurrencyAmount, Token } from '@dogebark/sdk'
 
 import { useMemo } from 'react'
 import { useSingleCallResult } from '../state/multicall/hooks'

@@ -1,4 +1,4 @@
-import { ChainId } from '@dogmoneyswap/sdk'
+import { ChainId } from '@dogebark/sdk'
 import { NetworkContextName } from '../constants'
 import { Web3Provider } from '@ethersproject/providers'
 import { Web3ReactContextInterface } from '@web3-react/core/dist/types'

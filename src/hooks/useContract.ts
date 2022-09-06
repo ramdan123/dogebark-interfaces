@@ -15,7 +15,7 @@ import {
   MIST_ADDRESS,
   MISTROLL_ADDRESS,
   WNATIVE_ADDRESS,
-} from '@dogmoneyswap/sdk'
+} from '@dogebark/sdk'
 import {
   ARGENT_WALLET_DETECTOR_ABI,
   ARGENT_WALLET_DETECTOR_MAINNET_ADDRESS,
@@ -42,7 +42,7 @@ import MASTERCHEF_V2_ABI from '../constants/abis/masterchef-v2.json'
 import MULTICALL2_ABI from '../constants/abis/multicall2.json'
 import ROUTER_ABI from '../constants/abis/router.json'
 import SUSHI_ABI from '../constants/abis/sushi.json'
-import SUSHIROLL_ABI from "@dogmoneyswap/core/abi/SushiRoll.json";
+import SUSHIROLL_ABI from '@dogmoneyswap/core/abi/SushiRoll.json'
 import WBCH_ABI from '../constants/abis/weth.json'
 import ZENKO_ABI from '../constants/abis/zenko.json'
 import { getContract } from '../functions/contract'
@@ -79,11 +79,7 @@ export function useWBCHContract(withSignerIfPossible?: boolean): Contract | null
 
 export function useArgentWalletDetectorContract(): Contract | null {
   const { chainId } = useActiveWeb3React()
-  return useContract(
-    undefined,
-    ARGENT_WALLET_DETECTOR_ABI,
-    false
-  )
+  return useContract(undefined, ARGENT_WALLET_DETECTOR_ABI, false)
 }
 
 export function useENSRegistrarContract(withSignerIfPossible?: boolean): Contract | null {
@@ -104,7 +100,7 @@ export function usePairContract(pairAddress?: string, withSignerIfPossible?: boo
 }
 
 export function useMerkleDistributorContract(): Contract | null {
-  throw new Error('useMerkleDistributorContract disabled');
+  throw new Error('useMerkleDistributorContract disabled')
 }
 
 export function useBoringHelperContract(): Contract | null {
@@ -153,7 +149,7 @@ export function useMakerContract(): Contract | null {
 }
 
 export function useTimelockContract(): Contract | null {
-  throw new Error('useTimelockContract disabled');
+  throw new Error('useTimelockContract disabled')
 }
 
 export function useBentoBoxContract(withSignerIfPossible?: boolean): Contract | null {
@@ -162,12 +158,12 @@ export function useBentoBoxContract(withSignerIfPossible?: boolean): Contract | 
 }
 
 export function useChainlinkOracle(): Contract | null {
-  throw new Error('useChainlinkOracle disabled');
+  throw new Error('useChainlinkOracle disabled')
 }
 
 export function useSushiRollContract(): Contract | null {
   const { chainId } = useActiveWeb3React()
-  return useContract(chainId && MISTROLL_ADDRESS[chainId], SUSHIROLL_ABI, false);
+  return useContract(chainId && MISTROLL_ADDRESS[chainId], SUSHIROLL_ABI, false)
 }
 
 export function useComplexRewarderContract(address, withSignerIfPossible?: boolean): Contract | null {
@@ -179,9 +175,9 @@ export function useCloneRewarderContract(address, withSignerIfPossibe?: boolean)
 }
 
 export function useLimitOrderContract(withSignerIfPossibe?: boolean): Contract | null {
-  throw new Error('useLimitOrderContract disabled');
+  throw new Error('useLimitOrderContract disabled')
 }
 
 export function useLimitOrderHelperContract(withSignerIfPossible?: boolean): Contract | null {
-  throw new Error('useLimitOrderHelperContract disabled');
+  throw new Error('useLimitOrderHelperContract disabled')
 }

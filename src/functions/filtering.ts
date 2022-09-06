@@ -1,4 +1,4 @@
-import { Token } from '@dogmoneyswap/sdk'
+import { Token } from '@dogebark/sdk'
 import { TokenInfo } from '@uniswap/token-lists'
 import { isAddress } from './validate'
 import { useMemo } from 'react'

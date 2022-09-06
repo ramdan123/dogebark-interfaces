@@ -1,5 +1,5 @@
-import { ChainId } from "@dogmoneyswap/sdk"
-import { default as bridge } from './bridge.json';
+import { ChainId } from '@dogebark/sdk'
+import { default as bridge } from './bridge.json'
 
 export type Chain = {
   id: ChainId
@@ -8,13 +8,13 @@ export type Chain = {
 }
 
 export type BridgeDataInfo = {
-  methodId: string,
-  symbol: string,
-  hint: string,
-  name: string,
-  logoUrl: string,
-  title: string,
-  chainId: number,
+  methodId: string
+  symbol: string
+  hint: string
+  name: string
+  logoUrl: string
+  title: string
+  chainId: number
 }
 
 export type AnyswapTokenInfo = {
@@ -64,34 +64,39 @@ export type AvailableChainsInfo = {
 export type AnyswapTokensMap = { [chainId: number]: { [contract: string]: AvailableChainsInfo } }
 
 export type SwapInfo = {
-  minimumAmount: number,
-  maximumAmount: number,
-  feeUsd: number,
-  feeBch: number,
-  receiveAmount: number,
-  from: string,
+  minimumAmount: number
+  maximumAmount: number
+  feeUsd: number
+  feeBch: number
+  receiveAmount: number
+  from: string
   to: string
 }
 
-export const bridgeData: BridgeDataInfo[] = bridge;
-export const ourTokenInfo = { Symbol: "BCH", Name: "Bitcoin Cash", Decimals: 18, ContractAddress: "bch" } as AnyswapTokenInfo
+export const bridgeData: BridgeDataInfo[] = bridge
+export const ourTokenInfo = {
+  Symbol: 'BCH',
+  Name: 'Bitcoin Cash',
+  Decimals: 18,
+  ContractAddress: 'bch',
+} as AnyswapTokenInfo
 
 export const anyswapInfo: AnyswapTokensMap = (() => {
   const data = {}
-  bridgeData.forEach(val => data[val.methodId] = val)
+  bridgeData.forEach((val) => (data[val.methodId] = val))
 
   let result: AnyswapTokensMap = {}
 
   Object.keys(data || {}).map((key) => {
     const bridgeInfo: BridgeDataInfo = data[key]
-    const info: AnyswapResultPairInfo = [bridgeInfo].map(val => {
+    const info: AnyswapResultPairInfo = [bridgeInfo].map((val) => {
       return {
         SrcToken: {
           Decimals: 18,
           Symbol: val.symbol,
           ID: val.methodId,
           Name: val.title,
-          ContractAddress: val.methodId
+          ContractAddress: val.methodId,
         } as AnyswapTokenInfo,
         DestToken: ourTokenInfo,
         PairID: val.methodId,
@@ -99,7 +104,7 @@ export const anyswapInfo: AnyswapTokensMap = (() => {
         srcChainID: String(val.chainId),
         logoUrl: val.logoUrl,
         name: val.title,
-        symbol: val.symbol
+        symbol: val.symbol,
       } as AnyswapResultPairInfo
     })[0]
 
@@ -158,9 +163,9 @@ export const anyswapInfo: AnyswapTokensMap = (() => {
     }
   })
 
-  const nativeBch = result[0]["bch"]
+  const nativeBch = result[0]['bch']
 
-  bridgeData.forEach(val => {
+  bridgeData.forEach((val) => {
     result[ChainId.SMARTBCH][val.methodId] = {
       destChainID: String(val.chainId),
       id: val.methodId,
@@ -172,7 +177,7 @@ export const anyswapInfo: AnyswapTokensMap = (() => {
         Symbol: val.symbol,
         ID: val.methodId,
         Name: val.title,
-        ContractAddress: val.methodId
+        ContractAddress: val.methodId,
       } as AnyswapTokenInfo,
       token: ourTokenInfo,
     }
@@ -182,15 +187,15 @@ export const anyswapInfo: AnyswapTokensMap = (() => {
 })()
 
 const _chains: { [chainId: number]: Chain } = {}
-const _chainIds = bridgeData.map(val => val.chainId).filter((val, index, array) => array.indexOf(val) === index)
+const _chainIds = bridgeData.map((val) => val.chainId).filter((val, index, array) => array.indexOf(val) === index)
 const _chainMap: { [chainId: string]: BridgeDataInfo[] } = {}
 
 _chainIds.forEach((chainId) => {
-  _chainMap[chainId] = bridgeData.filter(val => val.chainId === chainId);
+  _chainMap[chainId] = bridgeData.filter((val) => val.chainId === chainId)
   const chainInfo = _chainMap[chainId][0]
   _chains[chainId] = { id: chainId, icon: chainInfo.logoUrl, name: chainInfo.name, symbol: chainInfo.symbol } as Chain
 })
 
-export const chains = _chains;
-export const chainIds = _chainIds;
-export const chainMap = _chainMap;
+export const chains = _chains
+export const chainIds = _chainIds
+export const chainMap = _chainMap

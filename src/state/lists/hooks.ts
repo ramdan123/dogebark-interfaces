@@ -1,5 +1,5 @@
 import { AppState } from '..'
-import { ChainId } from '@dogmoneyswap/sdk'
+import { ChainId } from '@dogebark/sdk'
 import DEFAULT_TOKEN_LIST from '../../default-token/default-token-list.json'
 import { TokenList } from '@uniswap/token-lists'
 import { UNSUPPORTED_LIST_URLS } from '../../config/token-lists'

@@ -1,4 +1,4 @@
-import { Currency, NATIVE, WNATIVE, currencyEquals } from '@dogmoneyswap/sdk'
+import { Currency, NATIVE, WNATIVE, currencyEquals } from '@dogebark/sdk'
 
 import { AutoColumn } from '../../../components/Column'
 import CurrencyLogo from '../../../components/CurrencyLogo'

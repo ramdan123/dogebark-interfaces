@@ -1,4 +1,4 @@
-import { Currency, Percent, Price } from '@dogmoneyswap/sdk'
+import { Currency, Percent, Price } from '@dogebark/sdk'
 
 import { Field } from '../../../state/mint/actions'
 import { ONE_BIPS } from '../../../constants'

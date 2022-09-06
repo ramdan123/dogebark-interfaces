@@ -1,4 +1,4 @@
-import { ChainId, CurrencyAmount, SmartBCH } from '@dogmoneyswap/sdk'
+import { ChainId, CurrencyAmount, SmartBCH } from '@dogebark/sdk'
 import {
   useUserArcherETHTip,
   useUserArcherGasPrice,

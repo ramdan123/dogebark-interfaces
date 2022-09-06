@@ -1,4 +1,4 @@
-// import { CurrencyAmount, JSBI, Token } from '@dogmoneyswap/sdk'
+// import { CurrencyAmount, JSBI, Token } from '@dogebark/sdk'
 
 // import { t } from '@lingui/macro'
 // import { tryParseAmount } from '../../functions'

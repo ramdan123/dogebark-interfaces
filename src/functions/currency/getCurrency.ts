@@ -1,6 +1,6 @@
 import { AddressZero } from '@ethersproject/constants'
-import { ChainId } from '@dogmoneyswap/sdk'
-import { DAI } from '../../config/tokens';
+import { ChainId } from '@dogebark/sdk'
+import { DAI } from '../../config/tokens'
 
 type Currency = { address: string; decimals: number }
 

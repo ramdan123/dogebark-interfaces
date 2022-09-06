@@ -1,4 +1,4 @@
-import { ChainId, Currency, NATIVE, MIST_ADDRESS, BAR_ADDRESS } from '@dogmoneyswap/sdk'
+import { ChainId, Currency, NATIVE, MIST_ADDRESS, BAR_ADDRESS } from '@dogebark/sdk'
 import { MIST } from '../../config/tokens'
 import { Feature, featureEnabled } from '../../functions/feature'
 import React, { useEffect, useState } from 'react'
@@ -239,16 +239,16 @@ function AppBar(): JSX.Element {
                     {i18n._(t`Swap`)}
                   </a>
                 </Link>
-                <Link href={'/pool'}>
+                {/* <Link href={'/pool'}>
                   <a
                     id={`pool-nav-link`}
                     className="p-2 text-baseline text-primary hover:text-high-emphesis focus:text-high-emphesis md:p-3 whitespace-nowrap"
                   >
                     {i18n._(t`Pool`)}
                   </a>
-                </Link>
+                </Link> */}
 
-                {chainId && featureEnabled(Feature.MIGRATE, chainId) && (
+                {/* {chainId && featureEnabled(Feature.MIGRATE, chainId) && (
                   <Link href={'/migrate'}>
                     <a
                       id={`migrate-nav-link`}
@@ -257,9 +257,9 @@ function AppBar(): JSX.Element {
                       {i18n._(t`Migrate`)}
                     </a>
                   </Link>
-                )}
+                )} */}
 
-                {chainId && featureEnabled(Feature.LIQUIDITY_MINING, chainId) && (
+                {/* {chainId && featureEnabled(Feature.LIQUIDITY_MINING, chainId) && (
                   <Link href={'/farm'}>
                     <a
                       id={`farm-nav-link`}
@@ -269,9 +269,9 @@ function AppBar(): JSX.Element {
                       {i18n._(t`Farm`)}
                     </a>
                   </Link>
-                )}
+                )} */}
 
-                {chainId && featureEnabled(Feature.KASHI, chainId) && (
+                {/* {chainId && featureEnabled(Feature.KASHI, chainId) && (
                   <>
                     <Link href={'/lend'}>
                       <a
@@ -291,9 +291,9 @@ function AppBar(): JSX.Element {
                       </a>
                     </Link>
                   </>
-                )}
+                )} */}
 
-                {chainId && featureEnabled(Feature.STAKING, chainId) && (
+                {/* {chainId && featureEnabled(Feature.STAKING, chainId) && (
                   <Link href={'/stake'}>
                     <a
                       id={`stake-nav-link`}
@@ -302,9 +302,9 @@ function AppBar(): JSX.Element {
                       {i18n._(t`Stake`)}
                     </a>
                   </Link>
-                )}
+                )} */}
 
-                {chainId && featureEnabled(Feature.BRIDGE, chainId) && (
+                {/* {chainId && featureEnabled(Feature.BRIDGE, chainId) && (
                   <ExternalLink
                     id={`bridge-nav-link`}
                     href={'https://app.multichain.org/#/router'}
@@ -312,17 +312,17 @@ function AppBar(): JSX.Element {
                   >
                     {i18n._(t`Bridge`)}
                   </ExternalLink>
-                )}
+                )} */}
 
-                {chainId && featureEnabled(Feature.GOVERNANCE, chainId) && (
+                {/* {chainId && featureEnabled(Feature.GOVERNANCE, chainId) && (
                   <Link href={'/vote'}>
                     <a className="p-2 text-baseline text-primary hover:text-high-emphesis focus:text-high-emphesis md:p-3 whitespace-nowrap">
                       {i18n._(t`Vote`)}
                     </a>
                   </Link>
-                )}
+                )} */}
 
-                {chainId && featureEnabled(Feature.ANALYTICS, chainId) && (
+                {/* {chainId && featureEnabled(Feature.ANALYTICS, chainId) && (
                   <ExternalLink
                     id={`analytics-nav-link`}
                     href={ANALYTICS_URL[chainId] || 'https://analytics.dogmoney.money'}
@@ -330,7 +330,7 @@ function AppBar(): JSX.Element {
                   >
                     {i18n._(t`Analytics`)}
                   </ExternalLink>
-                )}
+                )} */}
               </div>
             </Popover.Panel>
           </>

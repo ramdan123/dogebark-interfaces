@@ -1,4 +1,10 @@
-import { TWAP_0_ORACLE_ADDRESS, TWAP_1_ORACLE_ADDRESS, CHAINLINK_ORACLE_ADDRESS, Currency, KASHI_ADDRESS } from '@dogmoneyswap/sdk'
+import {
+  TWAP_0_ORACLE_ADDRESS,
+  TWAP_1_ORACLE_ADDRESS,
+  CHAINLINK_ORACLE_ADDRESS,
+  Currency,
+  KASHI_ADDRESS,
+} from '@dogebark/sdk'
 import React, { useCallback, useState } from 'react'
 import { useCreateActionHandlers, useCreateState, useDerivedCreateInfo } from '../../../state/create/hook'
 
@@ -20,7 +26,7 @@ import { useLingui } from '@lingui/react'
 import { useRouter } from 'next/router'
 import { useTransactionAdder } from '../../../state/transactions/hooks'
 import { PairState, useV2Pair } from '../../../hooks/useV2Pairs'
-import { Pair } from '@dogmoneyswap/sdk'
+import { Pair } from '@dogebark/sdk'
 import NeonSelect, { NeonSelectItem } from '../../../components/Select'
 
 export type ChainlinkToken = {
@@ -46,7 +52,7 @@ function Create() {
   const addTransaction = useTransactionAdder()
 
   const router = useRouter()
-  const factory = useFactoryContract();
+  const factory = useFactoryContract()
 
   // swap state
   const { independentField, typedValue } = useCreateState()
@@ -56,8 +62,9 @@ function Create() {
 
   const [isChainlink, setIsChainlink] = useState<boolean>(false)
   const [pairState, pair] = useV2Pair(currencies[Field.ASSET], currencies[Field.COLLATERAL]) as [PairState, Pair]
-  const twapType = pair?.token0.address === currencies[Field.ASSET]?.wrapped.address ? OracleType.TWAP0 : OracleType.TWAP1
-  let error = pairState === PairState.EXISTS ? '' : 'Pair does not exist';
+  const twapType =
+    pair?.token0.address === currencies[Field.ASSET]?.wrapped.address ? OracleType.TWAP0 : OracleType.TWAP1
+  let error = pairState === PairState.EXISTS ? '' : 'Pair does not exist'
 
   const [oracleType, setOracleType] = useState<OracleType>(isChainlink ? OracleType.ChainLink : twapType)
   const items = {
@@ -155,8 +162,8 @@ function Create() {
     try {
       if (!both) return
 
-      let oracleData;
-      let oracleAddress;
+      let oracleData
+      let oracleAddress
       switch (oracleType) {
         case OracleType.ChainLink:
           oracleData = await getChainlikOracleData(currencies[Field.ASSET], currencies[Field.COLLATERAL])
@@ -197,7 +204,9 @@ function Create() {
       const tx = await bentoBoxContract?.deploy(chainId && KASHI_ADDRESS[chainId], kashiData, true)
 
       addTransaction(tx, {
-        summary: `Add Lend market ${currencies[Field.ASSET].symbol}/${currencies[Field.COLLATERAL].symbol} MistSwap TWAP0`,
+        summary: `Add Lend market ${currencies[Field.ASSET].symbol}/${
+          currencies[Field.COLLATERAL].symbol
+        } MistSwap TWAP0`,
       })
 
       router.push('/lend')
@@ -247,18 +256,18 @@ function Create() {
             />
           </div>
 
-          {false && <div className="flex justify-between items-center">
-            <span>
-              {i18n._(t`Select price oracle`)}
-            </span>
-            <NeonSelect value={items[oracleType]}>
-              {Object.entries(items).map(([k, v]) => (
-                <NeonSelectItem key={k} value={k} onClick={selectHandler}>
-                  {v}
-                </NeonSelectItem>
-              ))}
-            </NeonSelect>
-          </div>}
+          {false && (
+            <div className="flex justify-between items-center">
+              <span>{i18n._(t`Select price oracle`)}</span>
+              <NeonSelect value={items[oracleType]}>
+                {Object.entries(items).map(([k, v]) => (
+                  <NeonSelectItem key={k} value={k} onClick={selectHandler}>
+                    {v}
+                  </NeonSelectItem>
+                ))}
+              </NeonSelect>
+            </div>
+          )}
 
           <Button
             color="gradient"

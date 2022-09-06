@@ -1,4 +1,4 @@
-import { ChainId, Currency, Token } from '@dogmoneyswap/sdk'
+import { ChainId, Currency, Token } from '@dogebark/sdk'
 import React, { useCallback, useEffect, useState } from 'react'
 import { AutoRow } from '../../components/Row'
 import Container from '../../components/Container'

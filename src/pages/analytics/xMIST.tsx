@@ -1,4 +1,4 @@
-import { MIST_ADDRESS } from '@dogmoneyswap/sdk'
+import { MIST_ADDRESS } from '@dogebark/sdk'
 import React, { useMemo } from 'react'
 import ScrollableGraph from '../../components/ScrollableGraph'
 import AnalyticsContainer from '../../features/analytics/AnalyticsContainer'
@@ -24,7 +24,7 @@ export default function XMIST_PAGE() {
   const { chainId } = useActiveWeb3React()
   const block1d = useBlock({ daysAgo: 1, chainId })
 
-  const exchange = useFactory({ chainId: chainId})
+  const exchange = useFactory({ chainId: chainId })
   const exchange1d = useFactory({ block: block1d, chainId })
 
   const dayData = useDayData()

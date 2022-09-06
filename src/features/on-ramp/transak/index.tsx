@@ -1,4 +1,4 @@
-import { ChainId } from '@dogmoneyswap/sdk'
+import { ChainId } from '@dogebark/sdk'
 import { t } from '@lingui/macro'
 import transakSDK from '@transak/transak-sdk'
 import { useActiveWeb3React } from '../../../hooks'

@@ -1,4 +1,4 @@
-import { KASHI_ADDRESS, FLEXUSD_ADDRESS, WNATIVE_ADDRESS } from '@dogmoneyswap/sdk'
+import { KASHI_ADDRESS, FLEXUSD_ADDRESS, WNATIVE_ADDRESS } from '@dogebark/sdk'
 import { useBentoBoxContract, useBoringHelperContract, useContract } from '../../hooks/useContract'
 import { useCallback, useEffect, useMemo, useState } from 'react'
 

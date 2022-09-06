@@ -1,4 +1,4 @@
-import { ChainId, Percent } from '@dogmoneyswap/sdk'
+import { ChainId, Percent } from '@dogebark/sdk'
 import React, { useRef, useState } from 'react'
 import {
   useExpertModeManager,

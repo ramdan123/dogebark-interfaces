@@ -1,4 +1,4 @@
-import { JSBI, Percent } from '@dogmoneyswap/sdk'
+import { JSBI, Percent } from '@dogebark/sdk'
 
 // converts a basis points value to a sdk percent
 export function basisPointsToPercent(num: number): Percent {

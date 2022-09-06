@@ -1,4 +1,4 @@
-import { Currency, CurrencyAmount, NATIVE, JSBI, Token } from '@dogmoneyswap/sdk'
+import { Currency, CurrencyAmount, NATIVE, JSBI, Token } from '@dogebark/sdk'
 import { useMultipleContractSingleData, useSingleContractMultipleData } from '../multicall/hooks'
 
 import ERC20_ABI from '../../constants/abis/erc20.json'

@@ -1,4 +1,4 @@
-import { ChainId, Currency, CurrencyAmount, SmartBCH, Percent, TradeType, Trade as V2Trade } from '@dogmoneyswap/sdk'
+import { ChainId, Currency, CurrencyAmount, SmartBCH, Percent, TradeType, Trade as V2Trade } from '@dogebark/sdk'
 import React, { useMemo } from 'react'
 import { RowBetween, RowFixed } from '../../../components/Row'
 

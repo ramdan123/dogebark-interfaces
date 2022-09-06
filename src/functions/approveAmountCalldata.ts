@@ -1,4 +1,4 @@
-import { BigintIsh, Currency, CurrencyAmount, JSBI } from '@dogmoneyswap/sdk'
+import { BigintIsh, Currency, CurrencyAmount, JSBI } from '@dogebark/sdk'
 
 import { Interface } from '@ethersproject/abi'
 

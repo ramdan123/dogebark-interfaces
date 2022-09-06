@@ -1,4 +1,4 @@
-import { ChainId, Currency, WNATIVE } from '@dogmoneyswap/sdk'
+import { ChainId, Currency, WNATIVE } from '@dogebark/sdk'
 import React, { FunctionComponent, useMemo } from 'react'
 
 import Logo from '../Logo'
@@ -21,11 +21,7 @@ export function getCurrencyLogoUrls(currency) {
 
   urls.push(`https://raw.githubusercontent.com/dogmoneyswap/icons/master/token/${getCurrencySymbol(currency)}.jpg`)
   if (currency.chainId in BLOCKCHAIN) {
-    urls.push(
-      `https://assets.dogmoney.money/blockchains/dogechain/assets/${
-        currency.address
-      }/logo.png`
-    )
+    urls.push(`https://assets.dogmoney.money/blockchains/dogechain/assets/${currency.address}/logo.png`)
     urls.push(
       `https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/${BLOCKCHAIN[currency.chainId]}/assets/${
         currency.address
@@ -68,8 +64,8 @@ const CurrencyLogo: FunctionComponent<CurrencyLogoProps> = ({
       return [unknown]
     }
 
-    if (currency["logoURI"]) {
-      return [currency["logoURI"]]
+    if (currency['logoURI']) {
+      return [currency['logoURI']]
     }
 
     if (currency.isNative || currency.equals(WNATIVE[currency.chainId])) {

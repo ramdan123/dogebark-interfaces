@@ -1,5 +1,5 @@
 import { AbstractConnector } from '@web3-react/abstract-connector'
-import { ChainId } from '@dogmoneyswap/sdk'
+import { ChainId } from '@dogebark/sdk'
 import { InjectedConnector } from '@web3-react/injected-connector'
 import { NetworkConnector } from '../entities/NetworkConnector'
 import RPC from './rpc'
@@ -52,10 +52,8 @@ export const SUPPORTED_WALLETS: { [key: string]: WalletInfo } = {
         rpc: RPC,
         bridge: 'https://bridge.walletconnect.org',
         qrcode: true,
-        supportedChainIds: [
-          ChainId.DOGECHAIN,
-        ],
-        chainId: network.provider.chainId
+        supportedChainIds: [ChainId.DOGECHAIN],
+        chainId: network.provider.chainId,
       })
     },
     name: 'WalletConnect',

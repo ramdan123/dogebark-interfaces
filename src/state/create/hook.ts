@@ -1,4 +1,4 @@
-import { Currency, Trade as V2Trade } from '@dogmoneyswap/sdk'
+import { Currency, Trade as V2Trade } from '@dogebark/sdk'
 import { Field, replaceCreateState, selectCurrency, switchCurrencies, typeInput } from './actions'
 import { useAppDispatch, useAppSelector } from '../hooks'
 

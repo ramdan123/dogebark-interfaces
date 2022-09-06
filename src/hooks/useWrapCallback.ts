@@ -1,4 +1,4 @@
-import { ChainId, Currency, NATIVE, WNATIVE } from '@dogmoneyswap/sdk'
+import { ChainId, Currency, NATIVE, WNATIVE } from '@dogebark/sdk'
 
 import { tryParseAmount } from '../functions/parse'
 import { getGasPrice } from '../functions/trade'
@@ -38,8 +38,7 @@ export default function useWrapCallback(
   const addTransaction = useTransactionAdder()
 
   return useMemo(() => {
-    if (!wethContract || !chainId || !inputCurrency || !outputCurrency)
-      return NOT_APPLICABLE
+    if (!wethContract || !chainId || !inputCurrency || !outputCurrency) return NOT_APPLICABLE
     const weth = WNATIVE[chainId]
     if (!weth) return NOT_APPLICABLE
 

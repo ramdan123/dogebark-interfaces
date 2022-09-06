@@ -1,5 +1,5 @@
 import { ApprovalState, useApproveCallback } from '../../hooks/useApproveCallback'
-import { ChainId, CurrencyAmount, JSBI, MASTERCHEF_ADDRESS, MASTERCHEF_V2_ADDRESS, Token, ZERO } from '@dogmoneyswap/sdk'
+import { ChainId, CurrencyAmount, JSBI, MASTERCHEF_ADDRESS, MASTERCHEF_V2_ADDRESS, Token, ZERO } from '@dogebark/sdk'
 import { Disclosure, Transition } from '@headlessui/react'
 import ProposalVoteOption from './ProposalVoteOption'
 import React, { useState } from 'react'
@@ -41,9 +41,7 @@ const ProposalListItemDetails = ({ proposal }) => {
       <Disclosure.Panel className="flex flex-col w-full border-t-0 rounded rounded-t-none bg-dark-800" static>
         <div className="grid gap-4 p-4 pt-4">
           <div>
-            <ReactMarkdown remarkPlugins={[remarkGfm]}>
-              {proposal?.content}
-            </ReactMarkdown>
+            <ReactMarkdown remarkPlugins={[remarkGfm]}>{proposal?.content}</ReactMarkdown>
           </div>
         </div>
         <div className="gap-4 p-4 pt-0">

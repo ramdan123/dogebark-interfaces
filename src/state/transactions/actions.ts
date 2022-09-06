@@ -1,4 +1,4 @@
-import { ChainId } from '@dogmoneyswap/sdk'
+import { ChainId } from '@dogebark/sdk'
 import { createAction } from '@reduxjs/toolkit'
 
 export interface SerializableTransactionReceipt {

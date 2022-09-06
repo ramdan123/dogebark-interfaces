@@ -8,7 +8,7 @@ import {
   WNATIVE,
   WNATIVE_ADDRESS,
   WBCH,
-} from '@dogmoneyswap/sdk'
+} from '@dogebark/sdk'
 import React, { createContext, useCallback, useContext, useEffect, useReducer } from 'react'
 import { ZERO, e10, maximum, minimum } from '../../../functions/math'
 import {
@@ -127,8 +127,8 @@ async function getPairs(bentoBoxContract, chainId: ChainId) {
   let success = false
   const masterAddress = KASHI_ADDRESS[chainId]
   // if (chainId !== ChainId.BSC && chainId !== ChainId.MATIC) {
-    logs = await bentoBoxContract.queryFilter(bentoBoxContract.filters.LogDeploy(masterAddress))
-    success = true
+  logs = await bentoBoxContract.queryFilter(bentoBoxContract.filters.LogDeploy(masterAddress))
+  success = true
   // }
   if (!success) {
     logs = (
@@ -205,15 +205,15 @@ export function KashiProvider({ children }) {
 
   const tokens = useAllTokens()
   tokens[WNATIVE_ADDRESS[chainId]] = WBCH[chainId]
-  Object.keys(tokens).forEach(address => {
+  Object.keys(tokens).forEach((address) => {
     if (!(tokens[address] as any).tokenInfo) {
-      (tokens[address] as any).tokenInfo = {
+      ;(tokens[address] as any).tokenInfo = {
         address: tokens[address].address,
         chainId: chainId,
         decimals: tokens[address].decimals,
         name: tokens[address].name,
         symbol: tokens[address].symbol,
-        logoURI: "https://raw.githubusercontent.com/mistswapdex/icons/master/token/unknown.png"
+        logoURI: 'https://raw.githubusercontent.com/mistswapdex/icons/master/token/unknown.png',
       }
     }
   })
@@ -229,11 +229,7 @@ export function KashiProvider({ children }) {
 
   const updatePairs = useCallback(async () => {
     // console.log('update pairs')
-    if (
-      !account ||
-      !chainId ||
-      ![/*ChainId.SMARTBCH*/, ChainId.SMARTBCH_AMBER].includes(chainId)
-    ) {
+    if (!account || !chainId || ![, /*ChainId.SMARTBCH*/ ChainId.SMARTBCH_AMBER].includes(chainId)) {
       return
     }
 
@@ -249,10 +245,10 @@ export function KashiProvider({ children }) {
 
       const invalidOracles = []
       const whitelistedPairs = [
-        "0x474b1A45eE106a44d69F9622A30e45CcEfE30a89", // WBCH-MIST
-        "0xe50DB30e0bD0086BB0db235A542A6bd730aB47dd", // MIST-WBCH
-        "0x8DfEEf5C7D0A99C6bb7c4f65bC2290AB2B4b3106", // bcUSDT-WBCH
-        "0x4C3576baD4D5C743848693a533671631bbE71CFf", // bcUSDT-MIST
+        '0x474b1A45eE106a44d69F9622A30e45CcEfE30a89', // WBCH-MIST
+        '0xe50DB30e0bD0086BB0db235A542A6bd730aB47dd', // MIST-WBCH
+        '0x8DfEEf5C7D0A99C6bb7c4f65bC2290AB2B4b3106', // bcUSDT-WBCH
+        '0x4C3576baD4D5C743848693a533671631bbE71CFf', // bcUSDT-MIST
       ]
 
       const allPairAddresses = logPairs

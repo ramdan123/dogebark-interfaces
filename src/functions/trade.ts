@@ -8,7 +8,7 @@ import {
   Trade,
   TradeType,
   currencyEquals,
-} from '@dogmoneyswap/sdk'
+} from '@dogebark/sdk'
 import { ONE_HUNDRED_PERCENT, ZERO_PERCENT } from '../constants'
 
 import { BigNumber } from '@ethersproject/bignumber'

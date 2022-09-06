@@ -1,9 +1,9 @@
-import { ChainId, Currency, CurrencyAmount, Price, Token } from '@dogmoneyswap/sdk'
+import { ChainId, Currency, CurrencyAmount, Price, Token } from '@dogebark/sdk'
 
 import { useActiveWeb3React } from '../hooks/useActiveWeb3React'
 import { useMemo } from 'react'
 import { useV2TradeExactOut } from './useV2Trades'
-import { FLEXUSD } from '@dogmoneyswap/sdk'
+import { FLEXUSD } from '@dogebark/sdk'
 
 // import { wrappedCurrency } from "../functions/currency/wrappedCurrency";
 

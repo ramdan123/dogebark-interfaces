@@ -1,5 +1,5 @@
 import { ApprovalState, useApproveCallback } from '../../hooks/useApproveCallback'
-import { BENTOBOX_ADDRESS, CurrencyAmount, Token, WNATIVE_ADDRESS } from '@dogmoneyswap/sdk'
+import { BENTOBOX_ADDRESS, CurrencyAmount, Token, WNATIVE_ADDRESS } from '@dogebark/sdk'
 import { BentoBalance, useBentoBalances } from '../../state/bentobox/hooks'
 import React, { useState } from 'react'
 import { useFuse, useSortableData } from '../../hooks'

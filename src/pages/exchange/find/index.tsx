@@ -1,4 +1,4 @@
-import { Currency, CurrencyAmount, SmartBCH, JSBI, NATIVE, Token } from '@dogmoneyswap/sdk'
+import { Currency, CurrencyAmount, SmartBCH, JSBI, NATIVE, Token } from '@dogebark/sdk'
 import { PairState, useV2Pair } from '../../../hooks/useV2Pairs'
 import React, { useCallback, useEffect, useState } from 'react'
 

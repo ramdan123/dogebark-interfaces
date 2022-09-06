@@ -1,4 +1,4 @@
-import { ChainId, Currency, Percent } from '@dogmoneyswap/sdk'
+import { ChainId, Currency, Percent } from '@dogebark/sdk'
 import React, { FC, useState } from 'react'
 
 import Gas from '../../components/Gas'

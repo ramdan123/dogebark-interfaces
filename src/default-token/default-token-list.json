@@ -73,6 +73,14 @@
       "decimals": 8,
       "chainId": 2000,
       "logoURI": "https://assets.dogmoney.money/blockchains/dogechain/assets/0xfA9343C3897324496A05fC75abeD6bAC29f8A40f/logo.png"
+    },
+    {
+      "name": "BARK",
+      "address": "0x03D05c770BAE6605366Aa2B2e8E38aa89FcCA758",
+      "symbol": "DOGEBARK",
+      "decimals": 18,
+      "chainId": 2000,
+      "logoURI": "https://assets.dogebark.dog/logo.png"
     }
   ]
 }

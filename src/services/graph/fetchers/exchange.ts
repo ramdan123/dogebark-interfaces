@@ -13,7 +13,7 @@ import {
   transactionsQuery,
 } from '../queries'
 
-import { ChainId } from '@dogmoneyswap/sdk'
+import { ChainId } from '@dogebark/sdk'
 import { GRAPH_HOST } from '../constants'
 import { pager } from './'
 

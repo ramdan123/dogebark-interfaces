@@ -1,4 +1,4 @@
-import { ChainId, MIST_ADDRESS, BAR_ADDRESS, Token, WBCH } from '@dogmoneyswap/sdk'
+import { ChainId, MIST_ADDRESS, BAR_ADDRESS, Token, WBCH } from '@dogebark/sdk'
 
 export const DAI = new Token(
   ChainId.DOGECHAIN,

@@ -1,12 +1,12 @@
-import { ChainId, Token } from '@dogmoneyswap/sdk'
+import { ChainId, Token } from '@dogebark/sdk'
 
 import { AddressZero } from '@ethersproject/constants'
 import { CHAINLINK_PRICE_FEED_MAP } from '../config/oracles/chainlink'
 import { defaultAbiCoder } from '@ethersproject/abi'
 import { e10 } from '../functions/math'
 import { isAddress } from '../functions'
-import { TWAP_0_ORACLE_ADDRESS } from '@dogmoneyswap/sdk'
-import { TWAP_1_ORACLE_ADDRESS } from '@dogmoneyswap/sdk'
+import { TWAP_0_ORACLE_ADDRESS } from '@dogebark/sdk'
+import { TWAP_1_ORACLE_ADDRESS } from '@dogebark/sdk'
 
 export interface Oracle {
   address: string
@@ -136,13 +136,12 @@ function lowerEqual(value1: string, value2: string) {
 
 export function getOracle(pair, chainId: ChainId, tokens): Oracle {
   // if (lowerEqual(pair.oracle, CHAINLINK_ORACLE_ADDRESS[chainId])) {
-  if (lowerEqual(pair.oracle, "")) {
+  if (lowerEqual(pair.oracle, '')) {
     return new ChainlinkOracle(pair, chainId, tokens)
   } else {
-    if (lowerEqual(pair.oracle, TWAP_0_ORACLE_ADDRESS[chainId]))
-      return new SushiSwapTWAP0Oracle(pair, chainId, tokens);
+    if (lowerEqual(pair.oracle, TWAP_0_ORACLE_ADDRESS[chainId])) return new SushiSwapTWAP0Oracle(pair, chainId, tokens)
     else if (lowerEqual(pair.oracle, TWAP_1_ORACLE_ADDRESS[chainId]))
-      return new SushiSwapTWAP1Oracle(pair, chainId, tokens);
+      return new SushiSwapTWAP1Oracle(pair, chainId, tokens)
     else throw Error(`Unsupported oracle: ${pair.oracle}`)
   }
 }

@@ -1,4 +1,4 @@
-import { ChainId } from '@dogmoneyswap/sdk'
+import { ChainId } from '@dogebark/sdk'
 
 const DogeChain = 'https://raw.githubusercontent.com/dogmoneyswap/icons/master/network/dogechain.jpg'
 

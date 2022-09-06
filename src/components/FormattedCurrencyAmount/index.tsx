@@ -1,4 +1,4 @@
-import { Currency, CurrencyAmount, Fraction, JSBI } from '@dogmoneyswap/sdk'
+import { Currency, CurrencyAmount, Fraction, JSBI } from '@dogebark/sdk'
 
 import React from 'react'
 

@@ -1,4 +1,4 @@
-import { ChainId, CurrencyAmount, SmartBCH } from '@dogmoneyswap/sdk'
+import { ChainId, CurrencyAmount, SmartBCH } from '@dogebark/sdk'
 import { CheckCircleIcon, ExclamationIcon, XCircleIcon } from '@heroicons/react/outline'
 import React, { FC, useCallback, useMemo } from 'react'
 

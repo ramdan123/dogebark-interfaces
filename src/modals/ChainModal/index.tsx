@@ -1,6 +1,4 @@
-import {
-  ChainId,
-} from '@dogmoneyswap/sdk'
+import { ChainId } from '@dogebark/sdk'
 import Image from 'next/image'
 import Modal from '../../components/Modal'
 import ModalHeader from '../../components/ModalHeader'
@@ -9,7 +7,7 @@ import { useWeb3React } from '@web3-react/core'
 import { Chain } from '../../features/bridge/interface'
 
 interface ChainModalProps {
-  chains: { [chainId: number]: Chain },
+  chains: { [chainId: number]: Chain }
   availableChains: number[]
   title?: string
   chain?: Chain

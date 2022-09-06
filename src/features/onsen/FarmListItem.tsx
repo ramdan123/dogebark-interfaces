@@ -1,8 +1,8 @@
 import { classNames, formatNumber, formatPercent } from '../../functions'
 
-import { ChainId } from '@dogmoneyswap/sdk'
+import { ChainId } from '@dogebark/sdk'
 import { MIST } from '../../config/tokens'
-import { ZERO } from '@dogmoneyswap/sdk'
+import { ZERO } from '@dogebark/sdk'
 import { Disclosure } from '@headlessui/react'
 import DoubleLogo from '../../components/DoubleLogo'
 import FarmListItemDetails from './FarmListItemDetails'
@@ -70,14 +70,12 @@ const FarmListItem = ({ farm, ...rest }) => {
                 </div>
               </div>
               <div className="flex flex-col items-center justify-center">
-                <div className="font-bold text-righttext-high-emphesis">
-                  {formatPercent(farm?.roiPerYear * 100)}
-                </div>
+                <div className="font-bold text-righttext-high-emphesis">{formatPercent(farm?.roiPerYear * 100)}</div>
                 <div className="text-xs text-right md:text-base text-secondary">{i18n._(t`annualized`)}</div>
               </div>
               {pendingSushi && pendingSushi.greaterThan(ZERO) ? (
-                <div className="flex flex-col items-center justify-center md:flex-row space-x-4 font-bold md:flex">
-                  <div className="hidden md:flex items-center space-x-2">
+                <div className="flex flex-col items-center justify-center space-x-4 font-bold md:flex-row md:flex">
+                  <div className="items-center hidden space-x-2 md:flex">
                     <div key="0" className="flex items-center">
                       <Image
                         src="https://assets.dogmoney.money/blockchains/dogechain/assets/0x93C8a00416dD8AB9701fa15CA120160172039851/logo.png"
@@ -85,7 +83,7 @@ const FarmListItem = ({ farm, ...rest }) => {
                         height="30px"
                         className="rounded-md"
                         layout="fixed"
-                        alt="DOGMONEY"
+                        alt="DOGBARK"
                       />
                     </div>
                   </div>
@@ -94,9 +92,9 @@ const FarmListItem = ({ farm, ...rest }) => {
                       {formatNumber(pendingSushi.toFixed(18))} DOGMONEY
                     </div>
                   </div>
-              </div>
+                </div>
               ) : (
-                <div className="flex-row items-center justify-center flex pl-3 font-bold text-sm">
+                <div className="flex flex-row items-center justify-center pl-3 text-sm font-bold">
                   {i18n._(t`Stake LP to Farm`)}
                 </div>
               )}

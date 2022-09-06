@@ -1,5 +1,5 @@
 import { ApprovalState, useApproveCallback } from '../../hooks/useApproveCallback'
-import { BENTOBOX_ADDRESS, WNATIVE_ADDRESS } from '@dogmoneyswap/sdk'
+import { BENTOBOX_ADDRESS, WNATIVE_ADDRESS } from '@dogebark/sdk'
 import useKashiApproveCallback, { BentoApprovalState } from '../../hooks/useKashiApproveCallback'
 
 import Alert from '../../components/Alert'
@@ -62,10 +62,7 @@ export function TokenApproveButton({ children, value, token, needed, color }: an
       <span>
         {i18n._(t`Approve`)} {token.symbol}
       </span>
-      {(approvalState === ApprovalState.PENDING &&
-        <Dots>
-        </Dots>
-      )}
+      {approvalState === ApprovalState.PENDING && <Dots children></Dots>}
     </Button>
   ) : (
     React.cloneElement(children, { color })

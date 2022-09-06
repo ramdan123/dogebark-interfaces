@@ -1,4 +1,4 @@
-import { ChainId, Currency } from '@dogmoneyswap/sdk'
+import { ChainId, Currency } from '@dogebark/sdk'
 
 export function currencyId(currency: Currency): string {
   if (currency.isNative) return 'DOGE'
