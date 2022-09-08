@@ -120,6 +120,7 @@
   "Expert mode turns off the confirm transaction prompt and allows high slippage trades\nthat often result in bad rates and lost funds.": "Modul Expert dezactivează solicitarea de confirmare a tranzacției și permite tranzacții cu alunecare ridicată \n care duc adesea la rate nepotrivite și la pierderea fondurilor.",
   "Expiration is the time at which the order will become invalid": "Data expirării este data la care comanda va deveni nevalidă",
   "Expired": "Expirat",
+  "Farm": "",
   "Faucet": "",
   "Filled": "Completat",
   "Find Pool": "Găsiți fond comun",

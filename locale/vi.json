@@ -120,6 +120,7 @@
   "Expert mode turns off the confirm transaction prompt and allows high slippage trades\nthat often result in bad rates and lost funds.": "Chế độ chuyên gia tắt lời nhắc xác nhận giao dịch và cho phép các giao dịch trượt giá cao\nthường dẫn đến tỷ giá xấu và mất tiền.",
   "Expiration is the time at which the order will become invalid": "Hết hạn là thời điểm mà lệnh sẽ trở nên không hợp lệ",
   "Expired": "Đã hết hạn",
+  "Farm": "",
   "Faucet": "",
   "Filled": "Đã điền",
   "Find Pool": "Tìm mạng lưới",

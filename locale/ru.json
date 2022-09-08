@@ -120,6 +120,7 @@
   "Expert mode turns off the confirm transaction prompt and allows high slippage trades\nthat often result in bad rates and lost funds.": "Экспертный режим отключает запрос на подтверждение транзакции и позволяет совершать сделки с высоким \n проскальзыванием, что часто приводит к плохим курсам и потере средств.",
   "Expiration is the time at which the order will become invalid": "Срок действия — это время, по истечении которого заявка станет недействительной",
   "Expired": "Срок действия истек",
+  "Farm": "",
   "Faucet": "",
   "Filled": "Заполнено",
   "Find Pool": "Найти пул",

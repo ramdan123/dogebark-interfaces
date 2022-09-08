@@ -120,6 +120,7 @@
   "Expert mode turns off the confirm transaction prompt and allows high slippage trades\nthat often result in bad rates and lost funds.": "전문가 모드는 거래 확인 알림은 비활성화하며 손실금을 초래할 수 있는 하이 슬리피지 거래를 활성화 시킵니다.",
   "Expiration is the time at which the order will become invalid": "만료는 주문이 유효하지 않게 되는 시간입니다",
   "Expired": "만료됨",
+  "Farm": "",
   "Faucet": "",
   "Filled": "작성됨",
   "Find Pool": "풀 찾기",

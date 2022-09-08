@@ -120,6 +120,7 @@
   "Expert mode turns off the confirm transaction prompt and allows high slippage trades\nthat often result in bad rates and lost funds.": "專家模式會關閉確認交易彈出式視窗並允許經常導致不良利率和資金損失的高滑動價差交易。",
   "Expiration is the time at which the order will become invalid": "逾期是指訂單失效的時間。",
   "Expired": "逾期",
+  "Farm": "",
   "Faucet": "水龍頭",
   "Filled": "填寫",
   "Find Pool": "查詢資金池",

@@ -120,6 +120,7 @@
   "Expert mode turns off the confirm transaction prompt and allows high slippage trades\nthat often result in bad rates and lost funds.": "Uzman modu, işlem istemini onaylamayı kapatır ve genellikle kötü oranlara ve fonları kaybetmeye neden olan\nyüksek slipajlı ticarete olanak sağlar.",
   "Expiration is the time at which the order will become invalid": "Bitiş tarihi, emrin geçersiz olacağı zamandır.",
   "Expired": "Süresi Dolmuş",
+  "Farm": "",
   "Faucet": "",
   "Filled": "Doldurulmuş",
   "Find Pool": "Havuz Bul",

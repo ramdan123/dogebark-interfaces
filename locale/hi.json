@@ -120,6 +120,7 @@
   "Expert mode turns off the confirm transaction prompt and allows high slippage trades\nthat often result in bad rates and lost funds.": "विशेषज्ञ मोड पुष्टि लेन-देन प्रांप्ट को बंद कर देता है और त्वरित और ज्यादा स्लिपेज वाले ट्रेड की अनुमति देता है जिस कारण अक्सर खराब दरें मिलती हैं या फिर फंड का नुकसान हो जाता है।",
   "Expiration is the time at which the order will become invalid": "समय सीमा समाप्ति जिस पर ऑर्डर अमान्य हो जाएगा",
   "Expired": "एक्स्पायर्ड",
+  "Farm": "",
   "Faucet": "",
   "Filled": "भरा हुआ",
   "Find Pool": "पूल का पता लगाएं",

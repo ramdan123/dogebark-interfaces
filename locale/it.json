@@ -120,6 +120,7 @@
   "Expert mode turns off the confirm transaction prompt and allows high slippage trades\nthat often result in bad rates and lost funds.": "La modalità esperto disattiva il messaggio di conferma della transazione e consente operazioni con uno slippage elevato\nrisultando spesso in tassi svantaggiosi e perdite di fondi.",
   "Expiration is the time at which the order will become invalid": "La scadenza corrisponde al momento in cui l'ordine non risulta più valido",
   "Expired": "Scaduto",
+  "Farm": "",
   "Faucet": "",
   "Filled": "Inserito",
   "Find Pool": "Trova pool",

@@ -1240,10 +1240,10 @@
     debug "^3.1.0"
     lodash.once "^4.1.1"
 
-"@dogebark/sdk@^0.0.3":
-  version "0.0.3"
-  resolved "https://registry.yarnpkg.com/@dogebark/sdk/-/sdk-0.0.3.tgz#60e3a5e570b2253670e294e19fcb498ca2834207"
-  integrity sha512-QemMNpK4NfmrT8uf331JnUk1a9ONqmCUfwyJfLpflnFzsozxo7j7wCcUBk/hjkKwIbrPgUy9UmSHSDQ4DPEWqA==
+"@dogebark/sdk@^0.0.4":
+  version "0.0.4"
+  resolved "https://registry.yarnpkg.com/@dogebark/sdk/-/sdk-0.0.4.tgz#c4c9ac55718d369f1f90e76f91270d4ccfd90bb3"
+  integrity sha512-5b982RL3nJfR0fS9CaDLzkyzEnZbgXDQ80Zpv4ScDebLJ8tgnEhbw3lONa2Slz3Pg9OJROn+bmIicTXMre8E9w==
   dependencies:
     big.js "^6.1.0"
     decimal.js-light "^2.5.0"

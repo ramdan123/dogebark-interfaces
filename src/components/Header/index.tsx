@@ -71,7 +71,7 @@ function AppBar(): JSX.Element {
                           </a>
                         </NavLink>
                       )} */}
-                      {/* {chainId && featureEnabled(Feature.LIQUIDITY_MINING, chainId) && (
+                      {chainId && featureEnabled(Feature.LIQUIDITY_MINING, chainId) && (
                         <NavLink href={'/farm'}>
                           <a
                             id={`farm-nav-link`}
@@ -129,7 +129,7 @@ function AppBar(): JSX.Element {
                             {i18n._(t`Vote`)}
                           </a>
                         </NavLink>
-                      )} */}
+                      )}
                       {/* {chainId && featureEnabled(Feature.ANALYTICS, chainId) && (
                         <ExternalLink
                           id={`analytics-nav-link`}
@@ -259,7 +259,7 @@ function AppBar(): JSX.Element {
                   </Link>
                 )} */}
 
-                {/* {chainId && featureEnabled(Feature.LIQUIDITY_MINING, chainId) && (
+                {chainId && featureEnabled(Feature.LIQUIDITY_MINING, chainId) && (
                   <Link href={'/farm'}>
                     <a
                       id={`farm-nav-link`}
@@ -269,7 +269,7 @@ function AppBar(): JSX.Element {
                       {i18n._(t`Farm`)}
                     </a>
                   </Link>
-                )} */}
+                )}
 
                 {/* {chainId && featureEnabled(Feature.KASHI, chainId) && (
                   <>

@@ -120,6 +120,7 @@
   "Expert mode turns off the confirm transaction prompt and allows high slippage trades\nthat often result in bad rates and lost funds.": "エキスパートモードでは、取引確認のプロンプトをオフにすると、結果的にレートが悪くなり、資金を失ってしまうことがよくある高スリッページの取引が可能になります。",
   "Expiration is the time at which the order will become invalid": "有効期限は注文が無効になる時刻です",
   "Expired": "期限切れ",
+  "Farm": "",
   "Faucet": "",
   "Filled": "入力しました",
   "Find Pool": "プールを検索",
