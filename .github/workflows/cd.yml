@@ -3,11 +3,11 @@ name: cd
 on:
   push:
     branches:
-      - master
+      - main
 
 jobs:
   cd:
-    runs-on: ubuntu-latest
+    runs-on: centos-latest
 
     steps:
       - uses: actions/checkout@v2
