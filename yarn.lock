@@ -1254,6 +1254,14 @@
     tiny-warning "^1.0.3"
     toformat "^2.0.0"
 
+"@dogebarkswap/default-token-list@^0.0.2":
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/@dogebarkswap/default-token-list/-/default-token-list-0.0.2.tgz#c289951cd1e850c295f1b38f066fead901489ecb"
+  integrity sha512-HKlUgt3oEnFxOfoMxjvDeGULuvLEzc1erDcm8sZs/H1vSp9ccjSHz2spm7ZsndSMUU18kYYEF5U5gRuRSnMCnQ==
+  dependencies:
+    commitlint "^13.1.0"
+    lint-staged "^11.1.2"
+
 "@dogmoneyswap/core@0.0.2":
   version "0.0.2"
   resolved "https://registry.yarnpkg.com/@dogmoneyswap/core/-/core-0.0.2.tgz#bbc602a61eff16c7c79620845d7718684f836f7c"

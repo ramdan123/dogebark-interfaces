@@ -1,6 +1,6 @@
 import { AppState } from '..'
 import { ChainId } from '@dogebark/sdk'
-import DEFAULT_TOKEN_LIST from '../../default-token/default-token-list.json'
+import DEFAULT_TOKEN_LIST from '@dogebarkswap/default-token-list'
 import { TokenList } from '@uniswap/token-lists'
 import { UNSUPPORTED_LIST_URLS } from '../../config/token-lists'
 import UNSUPPORTED_TOKEN_LIST from '../../constants/token-lists/mistswap-v2-unsupported.tokenlist.json'
