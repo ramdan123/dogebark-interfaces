@@ -151,7 +151,7 @@ export default function Farm(): JSX.Element {
       },
 
       // dogmoney pairs
-      '0x9Ab710Cd0BfbeE60E14115D19c76213C4D4b1687': {
+      '0xB649291E7eb6b39e6B8B504B78c36Edb3736303F': {
         farmId: 14,
         allocPoint: 300000000,
         token0: MIST[ChainId.DOGECHAIN],
