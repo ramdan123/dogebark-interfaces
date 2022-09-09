@@ -1254,10 +1254,10 @@
     tiny-warning "^1.0.3"
     toformat "^2.0.0"
 
-"@dogebarkswap/default-token-list@^0.0.6":
-  version "0.0.6"
-  resolved "https://registry.yarnpkg.com/@dogebarkswap/default-token-list/-/default-token-list-0.0.6.tgz#28d2d96da36d9145838964b75416307f52c8b397"
-  integrity sha512-tdcuv7BaswNfVCRFt5UE9b9Zm6XEL+J7hkGMUteAG95uqGpe8MXPF3Ge6MoIuva5PgXA9bAEnVFb6qo9n220MA==
+"@dogebarkswap/default-token-list@^0.0.7":
+  version "0.0.7"
+  resolved "https://registry.yarnpkg.com/@dogebarkswap/default-token-list/-/default-token-list-0.0.7.tgz#abe4020eefd92bd61e4d5b636847b8c9fcf985f5"
+  integrity sha512-TOeiL3yu9g4mB8NVofCWybwH2+WfuzOC+Lg9YFrSkEWpb2h0tja/YpRwcqesyyswarsh2aMeNdFsRnOzeoyCtw==
   dependencies:
     commitlint "^13.1.0"
     lint-staged "^11.1.2"

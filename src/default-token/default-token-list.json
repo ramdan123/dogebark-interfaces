@@ -8,7 +8,7 @@
   },
   "tags": {},
   "logoURI": "https://assets.dogebark.dog/logo.png",
-  "keywords": ["dogebark", "default"],
+  "keywords": ["BARKTEST", "default"],
   "tokens": [
     {
       "name": "Bourbon",
@@ -35,9 +35,9 @@
       "logoURI": "https://assets.dogmoney.money/blockchains/dogechain/assets/0x7B4328c127B85369D9f82ca0503B000D09CF9180/logo.png"
     },
     {
-      "name": "Doge Bark",
-      "address": "0x7A20Be722D064FEE9e756dC9C281c9413F36700b",
-      "symbol": "DOGEBARK",
+      "name": "BARKTEST",
+      "address": "0xB82A4A02F35Ca0eB6240FBdA22F4D2c81536279F",
+      "symbol": "BARKTEST",
       "decimals": 18,
       "chainId": 2000,
       "logoURI": "https://assets.dogebark.dog/logo.png"

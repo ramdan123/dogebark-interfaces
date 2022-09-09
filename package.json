@@ -31,7 +31,7 @@
     "@commitlint/cli": "^13.0.0",
     "@commitlint/config-conventional": "^13.0.0",
     "@dogebark/sdk": "^0.0.5",
-    "@dogebarkswap/default-token-list": "^0.0.6",
+    "@dogebarkswap/default-token-list": "^0.0.7",
     "@dogmoneyswap/core": "0.0.2",
     "@ethereumjs/common": "^2.4.0",
     "@ethereumjs/tx": "^3.3.0",
