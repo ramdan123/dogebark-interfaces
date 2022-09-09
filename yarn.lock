@@ -1240,10 +1240,10 @@
     debug "^3.1.0"
     lodash.once "^4.1.1"
 
-"@dogebark/sdk@^0.0.4":
-  version "0.0.4"
-  resolved "https://registry.yarnpkg.com/@dogebark/sdk/-/sdk-0.0.4.tgz#c4c9ac55718d369f1f90e76f91270d4ccfd90bb3"
-  integrity sha512-5b982RL3nJfR0fS9CaDLzkyzEnZbgXDQ80Zpv4ScDebLJ8tgnEhbw3lONa2Slz3Pg9OJROn+bmIicTXMre8E9w==
+"@dogebark/sdk@^0.0.5":
+  version "0.0.5"
+  resolved "https://registry.yarnpkg.com/@dogebark/sdk/-/sdk-0.0.5.tgz#2ab0869a29250466e1eead4ff7f86184c8f6d2f1"
+  integrity sha512-DU/Yp/C4BkIrH/UleuTVGnRPnDx0Bm7aFyoMNjV53sKBoxr/r2Ae1114zli5DenERizv1kdxZWAAeRDcjRr4wQ==
   dependencies:
     big.js "^6.1.0"
     decimal.js-light "^2.5.0"
@@ -1254,10 +1254,10 @@
     tiny-warning "^1.0.3"
     toformat "^2.0.0"
 
-"@dogebarkswap/default-token-list@^0.0.2":
-  version "0.0.2"
-  resolved "https://registry.yarnpkg.com/@dogebarkswap/default-token-list/-/default-token-list-0.0.2.tgz#c289951cd1e850c295f1b38f066fead901489ecb"
-  integrity sha512-HKlUgt3oEnFxOfoMxjvDeGULuvLEzc1erDcm8sZs/H1vSp9ccjSHz2spm7ZsndSMUU18kYYEF5U5gRuRSnMCnQ==
+"@dogebarkswap/default-token-list@^0.0.6":
+  version "0.0.6"
+  resolved "https://registry.yarnpkg.com/@dogebarkswap/default-token-list/-/default-token-list-0.0.6.tgz#28d2d96da36d9145838964b75416307f52c8b397"
+  integrity sha512-tdcuv7BaswNfVCRFt5UE9b9Zm6XEL+J7hkGMUteAG95uqGpe8MXPF3Ge6MoIuva5PgXA9bAEnVFb6qo9n220MA==
   dependencies:
     commitlint "^13.1.0"
     lint-staged "^11.1.2"
