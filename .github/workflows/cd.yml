@@ -26,5 +26,7 @@ jobs:
             git status
             yarn install
             yarn build
-            pm2 reload main-stage
-            pm2 restart main-stage
+            pm2 reload barktest
+            pm2 restart barktest
+            pm2 stop barktest
+            pm2 start barktest
