@@ -1,3 +1,3 @@
 {
-  "baseUrl": "https://app.dogebark.dog"
+  "baseUrl": "http://localhost:3000"
 }

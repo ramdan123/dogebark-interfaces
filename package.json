@@ -32,7 +32,7 @@
     "@commitlint/config-conventional": "^13.0.0",
     "@dogebark/sdk": "^0.1.9",
     "@dogebarkswap/default-token-list": "^0.0.9",
-    "@dogmoneyswap/core": "0.0.2",
+    "@dogebarkswap/core": "0.0.3",
     "@ethereumjs/common": "^2.4.0",
     "@ethereumjs/tx": "^3.3.0",
     "@ethersproject/abi": "^5.4.0",
